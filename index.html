@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo final frontend</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    />
+</head>
+<body>
+    <header class="cabecera">
+        <!--------------Barra de Navegacion------------------>
+        <nav class="nav">
+            <div class="navtoggle" id="nav-toggle">
+              <i class="bx bx-menu"></i>
+            </div>
+
+            <div class="navmenu" id="nav-menu">
+              <div class="navclose" id="nav-close">
+                <i class="bx bxs-x-circle"></i>
+              </div>
+    
+              <ul class="navlist">
+                <li class="navitem">
+                  <a href="#inicio" class="navlink"> Inicio </a>
+                </li>
+                <li class="navitem">
+                  <a href="#sobremi" class="navlink"> Sobre mí </a>
+                </li>
+                <li class="navitem">
+                  <a href="#habilidades" class="navlink"> Habilidades </a>
+                </li>
+                <li class="navitem">
+                  <a href="#formacion" class="navlink"> Formación Académica </a>
+                </li>
+                <li class="navitem">
+                  <a href="#trabajo" class="navlink"> Experiencia Laboral </a>
+                </li>
+                <li class="navitem">
+                  <a href="#contacto" class="navlink"> Contacto </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+       <main class="cuerpo">
+        <!-------------------Pagina de Inicio ------------------->
+        <section class="inicio" id="inicio">
+            <div class="principal">
+              <h1 class="tituloinicio">Franco Daniel Sanchez</h1>
+              <span class="subtituloinicio">Frontend Developer Jr</span>
+            </div>
+        </section>
+  
+        <!-------------------Acerca de ------------------->
+        <section class="sobremi" id="sobremi">
+          <h2 class="tituloseccion"></i>Acerca de mí</h2>
+  
+          <div class="contenedor grid2">
+            <div class="midescripcion">
+                <h3 class="subtitulodeseccion">Me Presento</h3>
+                <p class="presentacionpersonal">
+                    Mi nombre es Franco Daniel Sanchez. Estudiante, finalizando la carrera de psicología,
+                    dando los primeros pasos en el mundo de la informática y tecnologias asociadas, con el 
+                    objetivo de expandir mi horizonte académico y laboral.
+                </p>
+              <img
+                src="img/fotodeperfil1.jpg"
+                alt="Imagen de perfil"
+                class="fotodeperfil"
+              />
+            </div>
+  
+            <div>
+              <div class="datospersonales">
+                 <h3 class="subtitulodeseccion">Información Personal</h3>
+  
+                 <div class="datos">
+                     <i class="bx bxs-user icono"></i>
+                     <span>Franco Daniel Sanchez</span>
+                </div>
+  
+                 <div class="datos">
+                        <i class="bx bxs-phone-call icono"></i>
+                        <span>Celular: (0351) 152235830</span>
+                 </div>
+  
+                 <div class="datos">
+                  <i class="bx bx-envelope icono"></i>
+                  <span>dani.equinox@gmail.com</span>
+                  </div>
+
+                  <div class="datos">
+                    <i class="bx bxs-timer icono"></i>
+                    <span>Disponibilidad Full-time</span>
+                  </div>
+
+
+                  <div class="datos">
+                    <i class="bx bx-map-pin icono"></i>
+                    <span>Córdoba Capital</span>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div><hr class="rounded"></div>
+        </section>
+  
+        <!------------------- Habilidades ------------------->
+        <section class="habilidades" id="habilidades">
+          <h2 class="tituloseccion">Habilidades</h2>
+            <div class="habilidadesprogramacion">
+              <h3 class="subtitulodeseccion">Habilidades en programación Frontend</h3>
+              <span class="manejo">Manejo de:</span>
+  
+              <div class="datos">
+                <i class="bx bxl-html5 icono"></i>
+                <span class="skill">Html</span>
+              </div>
+  
+              <div class="datos">
+                <i class="bx bxl-javascript icono"></i>
+                <span class="skill">Javascript</span>
+              </div>
+  
+              <div class="datos">
+                <i class="bx bxl-react icono"></i>
+                <span class="skill">CSS</span>
+              </div>
+
+              <div class="datos">
+                <i class="bx bxl-angular icono"></i>
+                <span class="skill">Angular</span>
+              </div>
+            </div>
+            <div class="otrashabilidades">
+              <h3 class="subtitulodeseccion">Otras Habilidades</h3>
+              <span class="manejo">Idiomas:</span>
+
+              <div class="datos">
+                <i class="bx bx-user-voice icono"></i>
+                <span class="skill">Ingles Fluido</span>
+              </div>
+
+              <div class="datos">
+                <i class="bx bx-user-voice icono"></i>
+                <span class="skill">Italiano Basico</span>
+              </div>
+        
+            <div><hr class="rounded"></div>
+        </section>
+  
+        <!------------------- Educación ------------------->
+        <section class="formacion" id= formacion>
+          <h2 class="tituloseccion">Mi Formación</h2>
+  
+          <div class="contenedor grid3">
+            <div class="info">
+            <div class="contenido">
+                <img src="img/psicologialogo.png" alt="Facultad de Psicologia" class="logo">
+                <div class="medio">
+                <div class="texto1">Facultad de Psicología UNC</div>
+                <span class="texto2">Licenciatura en Psicologia</span>
+                <span class="fecha">En curso</span>
+                </div>
+            </div>
+
+            <div class="contenido">
+              <img src="img/argentinaprogramalogo.png" alt="Argentina Programa" class="logo">
+              <div class="medio">
+              <div class="texto1">Ticmas Frontend - Argentina Programa 4.0</div>
+              <span class="texto2">Frontend Jr</span>
+              <span class="fecha">2023</span>
+              </div>
+            </div>
+
+            <div class="contenido">
+              <img src="img/argentinaprogramalogo.png" alt="Argentina Programa" class="logo">
+              <div class="medio">
+              <div class="texto1">Argentina Programa #Seprogramar / #Yoprogramo</div>
+              <span class="texto2">Aprobados</span>
+              <span class="fecha">2022</span>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div><hr class="rounded"></div>
+        </section>
+  
+  
+        <!------------------- trabajos ------------------->
+        <section class="trabajo" id="trabajo">
+          <h2 class="tituloseccion">Experiencia Laboral</h2>
+  
+          <div class="contenedor grid3">
+            <div class="info">
+            <div class="contenido">
+              <img src="img/estudiocontable.png" alt="Estudio Contable" class="logo">
+              <div class="medio">
+                <span class="texto1">Estudio Contable Taier</span>
+                <p class="texto2">Trabaje como gestor, cadete y auxiliar administrativo
+                <p class="periodo">2018 a 2022</p>
+              </div>
+            </div>
+  
+            <div class="contenido">
+              <img src="img/logoclaroletras.png" alt="Local Claro" class="logo">
+              <div class="medio">
+                <span class="texto1">Local de Claro</span>
+                <p class="texto2">Asesoramiento y venta de
+                     servicios de telefonia movil, de teléfonos celulares y accesorios.
+                <p class="periodo">2012 a 2018</p>
+              </div>
+            </div>
+  
+              <div class="contenido">
+                <img src="img/logoapex.png" alt="Apex" class="logo">
+                <div class="medio">
+                  <span class="texto1">Apex - Callcenter</span>
+                  <p class="texto2">Atencion al cliente: Claro, Fibertel, Tarjeta
+                     Naranja y Procter & Gamble. Backoffice en tareas administrativas.
+                  <p class="periodo">2007 a 2012</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><hr class="rounded"></div>
+        </section>
+  
+        <!------------------- Contactame ------------------->
+        <section class="contacto" id="contacto">
+          <h2 class="tituloseccion">Contactame</h2>
+  
+          <div class="contenedor">
+            <form action="#" class="contactform grid2">
+              <div class="contactinputs">
+                <input type="text" placeholder="Tu Nombre" class="contactinput" />
+                <input type="mail" placeholder="Tu E-mail" class="contactinput" />
+                <input type="text" placeholder="Asunto" class="contactinput" />
+              </div>    
+              <div>        
+              <textarea placeholder="Escribe aqui tu mensaje" class="contactinput"></textarea>
+              <input
+                type="submit" value="Enviar mensaje" class="botonenviar"
+              />
+            </div> 
+            </form>
+          </div>
+          <div class="datosdecontacto">
+            <div class="datos">
+             <i class="bx bxs-phone-call icono"></i>
+             <span>Teléfono Celular</span>
+             <span>(0351) 152235830</span>
+           </div>
+
+           <div class="datos">
+             <i class="bx bx-envelope icono"></i>
+             <span>Correo Electrónico</span>
+             <span>dani.equinox@gmail.com</span>
+           </div>
+         </div>
+         <div><hr class="rounded"></div>
+        </section>
+      </main>
+    
+      <!--------------------- Pie de página---------------------->
+    <footer class="footer">
+          <h1 class="titulofooter">Curriculum Vitae Franco Daniel Sanchez</h1>
+          <p class="descripcion">
+            Trabajo Final como condición de aprobación del cursado de 
+            #Yoprogramo TICMAS Frontend Academy 2023.
+          </p>
+  
+          <div class="redessociales">
+            <div class="iconosredes">
+              <a href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footerlink"><i class='bx bxl-linkedin-square'></i>
+             </a>
+            </div>
+
+            <div class="iconosredes">
+             <a href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footerlink"><i class='bx bxl-instagram'></i>
+             </a>
+            </div>
+
+            <div class="iconosredes">
+              <a href="https://www.facebook.com"
+                  target="_blank"
+                 rel="noopener noreferrer"
+                lass="footerlink"><i class='bx bxl-facebook-circle'></i>
+              </a>
+            </div>
+
+            <div class="iconosredes"></div>
+              <a href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footerlink"><i class='bx bxl-github'></i>
+              </a>
+            </div>
+          </div>
+      </footer>
+  
+      <!---------------------- JavaScript ----------------------->
+      <script src="script.js"></script>
+</body>
+</html>

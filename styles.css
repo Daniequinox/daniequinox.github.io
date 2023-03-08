@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap');
+
+*{
+    margin: 0%;
+    text-align: center;
+    font-family:'Manrope', sans-serif;
+    scroll-behavior: smooth;
+    color: ghostwhite;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+.cabecera {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-image: linear-gradient(to bottom, black, rgb(85, 8, 109));
+}
+
+
+.nav {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+
+  }
+
+.navmenu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 110vh;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top, black, blueviolet);
+    transition: 0.5s;
+}
+
+.navlist {
+    margin-top: 2rem;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+  }
+
+.navclose {
+    position: absolute;
+    bottom: 15%;
+    place-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+  
+.navitem {
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+  
+.navlink {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, black, rgb(85, 8, 109));
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 10px;
+
+}
+  
+.navlink:hover {
+    background-image: linear-gradient(to top, black , red);
+    font-weight: bolder;
+}
+  
+.navtoggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 1.5rem;
+    text-align: center;
+ }
+  
+  /* --------------------- Mostrar menú -------------------- */
+.show {
+    left: 0;
+}
+  
+/* ----------------------- Menú activo ----------------- */
+.active {
+    background-image: linear-gradient(to top, black, green);
+}
+
+.cuerpo{
+    background-image: linear-gradient(to right, rgb(97, 91, 100), rgb(138, 80, 192), rgb(98, 92, 100));
+}
+
+.inicio{
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/fondoinicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    place-items: center;
+}
+
+.principal{
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    display: block;
+    
+}
+
+.tituloinicio{
+    font-weight:bolder;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px blueviolet;
+}
+
+.subtituloinicio{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px blueviolet;
+}
+
+.midescripcion{
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    border-radius: 25px;
+    padding: 2rem;
+    line-height: 1.5;
+    margin: 2rem;
+    letter-spacing: 1px;
+    
+}
+
+.presentacionpersonal{
+    font-weight: bold;
+}
+
+.fotodeperfil{
+    margin-top: 1rem;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.datospersonales{
+    margin-top: 0%;
+    padding: 0,5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.datos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+
+.habilidadesprogramacion{
+    margin-top: 0%;
+    padding: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.otrashabilidades{
+    margin-top: 0%;
+    padding: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.manejo{
+    border-radius: 20px;
+    letter-spacing: 5px;
+    padding: 5px 40px 5px 40px;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px blueviolet;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+
+/*--------------------- hover overlay de formacion--------------------------------- */
+.contenido {
+    position: relative;
+    width: 75%;
+    margin: 5px;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+  
+.logo {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.medio{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 20px;
+    display: grid;
+}
+  
+.contenido:hover .logo {
+    opacity: 0.5;
+}
+  
+.contenido:hover .medio {
+    background-color: blueviolet;
+    opacity: 1;
+    box-shadow: 2px 2px 5px black;
+}
+
+.institucion, .texto2, .periodo, .fecha{
+    font-size:small;
+    letter-spacing: 1px;
+}
+
+.texto1{
+    letter-spacing: 2px;
+}
+
+/*--------------------- termina hover overlay de formacion--------------------------------- */
+
+
+.info{
+    display: grid;
+    position: relative;
+    place-items: center;
+    margin: 10px;
+}
+
+.contactform{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.contactinput{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    background-color: ghostwhite;
+    font-size: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.botonenviar{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    background-color: blueviolet;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+  
+.botonenviar:hover {
+    background-color: black;
+    box-shadow: 5px 5px 10px blueviolet;
+}
+
+.datosdecontacto{
+    margin-bottom: 2rem;
+    display: block;
+    place-items: center;
+    padding: 1rem;
+}
+
+.icono{
+    color: blueviolet;
+    text-shadow: 2px 2px 4px ghostwhite;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.tituloseccion{
+    padding-top: 2rem;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+.subtitulodeseccion{
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.bd-grid {
+    display: grid;
+    position: relative;
+    place-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+section{
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+hr.rounded {
+    visibility: hidden;
+}
+
+.inicio{
+    height: 100vh;
+}
+
+.footer {
+    background-image: linear-gradient(to top, black, rgb(85, 8, 109));
+    text-align: center;
+    bottom: 0%;
+  }
+
+.redessociales{
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion {
+    margin: 1rem;
+}
+
+.iconosredes{
+    padding: 10px;
+}
+    
+a{
+    color: ghostwhite;
+}
+  
+a:visited {
+    background-color: blueviolet;
+}
+  
+a:hover {
+    text-shadow: 4px 4px 8px blueviolet;
+
+}
+  
+a:active {
+    background-color: hotpink;
+} 
+
+/*---------------------Media Querys--------------------*/
+
+/* ------------------------- Tablet ---------------------------- */
+@media screen and (min-width: 768px){
+    .cabecera {
+        width: 0%;
+        left: 0%;
+    }
+    
+    .navtoggle,
+    .navclose {
+        display: none;
+    }
+    
+    .navmenu {
+        left: 0;
+        width: 200px;
+        display:flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navlist{
+        display:block;
+        align-items: center;
+        padding: 20px;
+        margin: 0%;
+
+    }
+
+    .navitem{
+        margin-top: 2rem;
+        width: 180px;
+        display: flex;
+        place-content: center;
+        font-size: 2rem;
+    }
+
+    .cuerpo{
+        margin-left: 200px;
+    }
+
+    .footer{
+        margin-left: 200px;
+    }
+
+    .logo{
+        height: 250px;
+        width: 250px;
+    }
+
+
+}
+
+
+
+
+/*-------------------------------------- Laptop y PC---------------------------------*/
+@media screen and (min-width: 1024px) {
+    .cabecera {
+        width: 0%;
+        left: 0%;
+      }
+    
+      .navtoggle,
+      .navclose {
+        display: none;
+      }
+    
+      .navmenu {
+        left: 0;
+        width: 250px;
+        display:flex;
+        align-items: center;
+        padding: 0;
+      }
+
+      .navlist{
+        display:block;
+        align-items: center;
+        padding: 20px;
+        margin: 0%;
+
+      }
+
+      .navitem{
+        margin-top: 2rem;
+        width: 200px;
+        display: flex;
+        place-content: center;
+        font-size: 2rem;
+      }
+
+      .navlink{
+        letter-spacing: 5px;
+      }
+
+      .navlink:hover {
+        padding: 30px;
+        transition: 0.8s;
+        letter-spacing: 8px;
+
+    }
+    .active {
+        padding: 30px;
+        transition: 0.8s;
+        letter-spacing: 8px;
+    }
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        column-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .grid3{
+        display: grid;
+        column-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .sobremi{
+        row-gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .datospersonales{
+        margin-top: 4rem;
+    }
+
+    .habilidades{
+        column-gap: 4rem;
+        display: block;
+    }
+
+    .logo{
+        height: 300px;
+        width: 100%;
+    }
+
+    .info{
+        display: flex;
+        grid-template-columns: 100%;
+        column-gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    section{
+        height: 100vh;
+    }
+
+    hr.rounded {
+        visibility: visible;
+        border-top: 8px solid blueviolet;
+        border-radius: 5px;
+        margin: 4rem;
+        box-shadow: 2px 2px 4px black;
+    }
+
+    .cuerpo{
+        margin-left: 250px;
+    }
+
+    .footer{
+        margin-left: 250px;
+    }
+
+    .contactform{
+        grid-template-columns: 200px auto;
+        row-gap: 3rem;
+        padding: 20px;
+    }
+    .contactinput{
+        width: 100%;
+        display: block;
+        padding: 0.5rem;
+        
+    }
+    .contactinputs {
+        display: block;
+        column-gap: 1rem;
+    }
+
+    .botonenviar{
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
